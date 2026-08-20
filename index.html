@@ -1,1 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Torneo Ping Pong SAFA 2026</title>
+<style>
+  @page {
+    size: A4 landscape;
+    margin: 10mm;
+    background-color: #0b1a12;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: #0b1a12;
+    color: #e2f1e7;
+  }
+
+  /* Header Section */
+  .header {
+    text-align: center;
+    padding: 10px 0 20px 0;
+    border-bottom: 2px solid #1c3b2b;
+    margin-bottom: 25px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 26pt;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  /* Bracket Layout */
+  .bracket-container {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .round {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 8px;
+  }
+
+  /* Match Structure */
+  .match-group {
+    margin-bottom: 20px;
+  }
+
+  .match {
+    background: #13271c;
+    border: 1px solid #284e37;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .match.champion-match {
+    border: 2px solid #4ade80;
+    background: #183324;
+    box-shadow: 0 0 15px rgba(74, 222, 128, 0.2);
+  }
+
+  .team {
+    padding: 8px 12px;
+    font-size: 10pt;
+    color: #cce3d4;
+    border-bottom: 1px solid #1c3b2b;
+    position: relative;
+    height: 36px;
+    line-height: 20px;
+  }
+
+  .team:last-child {
+    border-bottom: none;
+  }
+
+  .team input[type="text"] {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 10pt;
+    width: 100%;
+    outline: none;
+    font-family: inherit;
+  }
+
+  /* Connector Visual Spacers */
+  .spacer {
+    height: 25px;
+  }
+  
+  .spacer-lg {
+    height: 70px;
+  }
+
+  .spacer-xl {
+    height: 140px;
+  }
+
+  /* Champion Banner */
+  .trophy-box {
+    text-align: center;
+    background: linear-gradient(135deg, #183324 0%, #0d2116 100%);
+    border: 1px solid #4ade80;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  .trophy-icon {
+    font-size: 24pt;
+    color: #4ade80;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>TORNEO PING PONG SAFA 2026</h1>
+  </div>
+
+  <div class="bracket-container">
+    
+    <!-- RONDA 1 -->
+    <div class="round">
+      
+      <!-- Match 1 -->
+      <div class="match-group">
+        <div class="match">
+          <div class="team">
+            <input type="text" placeholder="Equipo 1">
+          </div>
+          <div class="team">
+            <input type="text" placeholder="Equipo 2">
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <!-- Match 2 -->
+      <div class="match-group">
+        <div class="match">
+          <div class="team">
+            <input type="text" placeholder="Equipo 3">
+          </div>
+          <div class="team">
+            <input type="text" placeholder="Equipo 4">
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <!-- Match 3 -->
+      <div class="match-group">
+        <div class="match">
+          <div class="team">
+            <input type="text" placeholder="Equipo 5">
+          </div>
+          <div class="team">
+            <input type="text" placeholder="Equipo 6">
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <!-- Match 4 -->
+      <div class="match-group">
+        <div class="match">
+          <div class="team">
+            <input type="text" placeholder="Equipo 7">
+          </div>
+          <div class="team">
+            <input type="text" placeholder="Equipo 8">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RONDA 2 -->
+    <div class="round">
+      
+      <div class="spacer-lg"></div>
+
+      <!-- Semi 1 -->
+      <div class="match-group">
+        <div class="match">
+          <div class="team">
+            <input type="text" placeholder="">
+          </div>
+          <div class="team">
+            <input type="text" placeholder="">
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer-xl"></div>
+
+      <!-- Semi 2 -->
+      <div class="match-group">
+        <div class="match">
+          <div class="team">
+            <input type="text" placeholder="">
+          </div>
+          <div class="team">
+            <input type="text" placeholder="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FINAL -->
+    <div class="round">
+      
+      <div class="spacer-xl" style="height: 120px;"></div>
+
+      <div class="match-group">
+        <div class="match champion-match">
+          <div class="team">
+            <input type="text" placeholder="">
+          </div>
+          <div class="team">
+            <input type="text" placeholder="">
+          </div>
+        </div>
+      </div>
+
+      <div class="trophy-box">
+        <div class="trophy-icon">🏆</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
 
